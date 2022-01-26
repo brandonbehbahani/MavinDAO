@@ -10,7 +10,7 @@ MavinDAO enables creators to build subDAOs for their community and fans. Fans th
 * View our smart contract here: https://github.com/MavinDAO/MavinDAO/blob/main/smartcontract.sol :)) code crafted by Brandon
 * Creators can deploy smart contracts via our website using web3.js. We used web3.eth.Contract https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html 
 * Moloch: https://github.com/MolochVentures/moloch 
-* Polygon: for cost efficiency 
+* Polygon
 * Web3.js 
 * DigitalOcean: cloud for developers <3 
 
