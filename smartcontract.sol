@@ -522,8 +522,9 @@ contract MavinDAO is ERC20, Ownable {
 
     }
 
-    function donateEth (uint256 amount) public {
-        transfer(owner, amount);
+    function donateEth (uint256 amount) public payable {
+        (bool sent, bytes memory data) = owner.call{value: msg.value}("");
+        require(sent, "Failed to send Ether");
         _mint(msg.sender, amount*10000);
     }
 
@@ -531,7 +532,6 @@ contract MavinDAO is ERC20, Ownable {
       name = _name;
       symbol = _symbol;
       decimals = 18;
-
     }
 
 }
