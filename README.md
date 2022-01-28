@@ -8,6 +8,7 @@ MavinDAO enables creators to build subDAOs for their community and fans. Fans th
 
 ## How to run it
 * cd hackathon-boilerplate
+* yarn install
 * yarn start
 * must use Polygon Mumbai Testnet on metamask: https://blog.pods.finance/guide-connecting-mumbai-testnet-to-your-metamask-87978071aca8
 
