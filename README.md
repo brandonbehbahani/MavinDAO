@@ -9,14 +9,12 @@ MavinDAO enables creators to build subDAOs for their community and fans. Fans th
 ## How to run it
 * cd hackathon-boilerplate
 * yarn start
+* must use Polygon Mumbai Testnet on metamask: https://blog.pods.finance/guide-connecting-mumbai-testnet-to-your-metamask-87978071aca8
 
 ## How we built it
-* View our smart contract here: https://github.com/MavinDAO/MavinDAO/blob/main/smartcontract.sol :)) 
 * Creators can deploy smart contracts via our website using web3.js. We used web3.eth.Contract https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html 
-* Moloch: https://github.com/MolochVentures/moloch 
 * Polygon
-* Web3.js 
-* DigitalOcean: cloud for developers <3 
+* Moralis 
 
 ## What's next for MavinDAO
 Keep on hacking because we are engineers that love to code!! 

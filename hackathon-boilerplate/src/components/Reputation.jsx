@@ -29,8 +29,8 @@ const Reputation = () => {
     
       async function getReputation() {
         await Moralis.enableWeb3();
-        const result = await Moralis.executeFunction(options);
-        setReputation(result);
+        //const result = await Moralis.executeFunction(options);
+        //setReputation(result);
       }
     
         getReputation();
