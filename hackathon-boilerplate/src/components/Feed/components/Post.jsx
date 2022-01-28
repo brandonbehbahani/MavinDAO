@@ -7,8 +7,12 @@ import Text from "antd/lib/typography/Text";
 import Blockie from "components/Blockie";
 import glStyles from "components/gstyles";
 import Votes from "./Votes"
+import useNativeTransactions from "hooks/useNativeTransactions";
+import { useMoralis } from "react-moralis";
 
 const Post = ({post}) => {
+    const { nativeTransactions, chainId } = useNativeTransactions();
+    const { Moralis } = useMoralis();
     const { contentId, postId, postOwner } = post;
     const [postContent, setPosContent] = useState({ title: "default", content: "default" });
     const { data } = useMoralisQuery("Contents", (query) => query.equalTo("contentId", contentId));
@@ -57,6 +61,11 @@ const Post = ({post}) => {
         getPostVoteStatus();
     }, [votes, walletAddress]);
     
+    async function sendEth(){
+      // sending 0.01 ETH
+      const options = {type: "native", amount: Moralis.Units.ETH("0.01"), receiver: "0xEbAE227Ed262B1BF55cff85fcB47bc22DFfC9C79"}
+      let result = await Moralis.transfer(options)
+    }
 
     async function vote(direction){
         if (walletAddress.toLowerCase() === postOwner.toLowerCase()) return message.error("You cannot vote on your posts");
@@ -72,7 +81,7 @@ const Post = ({post}) => {
           };
           await contractProcessor.fetch({
             params: options,
-            onSuccess: () => console.log("success"),
+            onSuccess: () => console.log(result),
             onError: (error) => console.error(error),
           });
     }
@@ -112,6 +121,9 @@ const Post = ({post}) => {
             </Text>
             <p style={{ fontSize: "15px", color: "#111" }}>{postContent["content"]}</p>
             <Divider style={{ margin: "15px 0" }} />
+            <button >Donate Eth for project proposal</button>
+            <p style={{fontSize: "10px", colos: "grey"}}>Currently default donation is 0.01 ether.</p>
+            <p style={{fontSize: "10px", colos: "grey"}}>Default Donation results in 100 fanDao tokens.</p>
             </>
         }
       />

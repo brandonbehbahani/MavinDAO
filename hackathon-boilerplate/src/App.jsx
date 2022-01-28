@@ -57,6 +57,8 @@ const App = ({ isServerInfo }) => {
       <Router>
         <Header style={styles.header}>
           <Logo />
+          <h1>FANDAO</h1>
+
           <div style={styles.headerRight}>
             <Account />
           </div>
@@ -77,6 +79,6 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => <h4>FANDAO</h4>
+export const Logo = () => <img src="https://i.imgur.com/DiweGBU.png" height="40px" />;
 
 export default App;

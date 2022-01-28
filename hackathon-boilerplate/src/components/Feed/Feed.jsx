@@ -21,7 +21,7 @@ const Feed = () => {
     if (selectedCategory["category"] === "default") {
         result = (
           <div className="col-lg-9">
-            <h3>Choose a Category</h3>
+            <h3>Choose a Creator</h3>
           </div>
         );
       }
