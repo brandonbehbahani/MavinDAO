@@ -17,7 +17,7 @@ const Categories = ({categories}) => {
             onClick={(e) => selectCategory(e.key)}
             style={{ ...glStyles.card, padding: "10px 0" }} 
             mode="inline">
-                <Menu.ItemGroup key="categories" title="Categories">
+                <Menu.ItemGroup key="categories" title="Creators">
                     {categories.map((category) => (
                         <Menu.Item key={category["categoryId"]}>{category["category"]}</Menu.Item>
                     ))}
