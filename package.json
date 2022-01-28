@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "web3": "^1.7.0"
+  },
+  "name": "mavindao",
+  "description": "The world needs a decentralised autonomous Patreon / Kickstarter (with on-going community).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "hardhat": "^2.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonbehbahani/MavinDAO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonbehbahani/MavinDAO/issues"
+  },
+  "homepage": "https://github.com/brandonbehbahani/MavinDAO#readme"
+}

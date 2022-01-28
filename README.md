@@ -6,6 +6,10 @@ The world needs a decentralised autonomous Patreon / Kickstarter (with on-going 
 ## What it does
 MavinDAO enables creators to build subDAOs for their community and fans. Fans then have the ability to vote on the path the creator will take. Imagine a musician who lets you vote on what songs they will play at their next show? A TV show like Bandersnatch that lets you vote on the storyline. An artist that lets you have a say on their next NFT drop! An indie game dev that lets you decide on characters and levels. 
 
+## How to run it
+* cd hackathon-boilerplate
+* yarn start
+
 ## How we built it
 * View our smart contract here: https://github.com/MavinDAO/MavinDAO/blob/main/smartcontract.sol :)) 
 * Creators can deploy smart contracts via our website using web3.js. We used web3.eth.Contract https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html 
