@@ -121,7 +121,7 @@ const Post = ({post}) => {
             </Text>
             <p style={{ fontSize: "15px", color: "#111" }}>{postContent["content"]}</p>
             <Divider style={{ margin: "15px 0" }} />
-            <button >Donate Eth for project proposal</button>
+            <button onclick={() => sendEth()}>Donate Eth for project proposal</button>
             <p style={{fontSize: "10px", colos: "grey"}}>Currently default donation is 0.01 ether.</p>
             <p style={{fontSize: "10px", colos: "grey"}}>Default Donation results in 100 fanDao tokens.</p>
             </>
