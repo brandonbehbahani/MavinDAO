@@ -8,6 +8,11 @@ MavinDAO enables creators to build subDAOs for their community and fans. Fans th
 
 ## How to run it
 * cd hackathon-boilerplate
+* create a .env file and paste the following:
+
+REACT_APP_MORALIS_APPLICATION_ID = XM92Mc7y6NYZ8G0nwymwezup7uFwE4KHxPjftlNw
+REACT_APP_MORALIS_SERVER_URL = https://2qlyhlvoodnz.usemoralis.com:2053/server
+
 * yarn install
 * yarn start
 * must use Polygon Mumbai Testnet on metamask: https://blog.pods.finance/guide-connecting-mumbai-testnet-to-your-metamask-87978071aca8
